@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-unsigned int tamStrR(const char * arr, unsigned int i=0)
+unsigned int tamStrR(const char arr[], unsigned int i=0)
 {
-    return *(arr+i)=='\0'?0:1+tamStrR(arr,i+1);
+    return arr[i]=='\0'?0:1+tamStrR(arr,i+1);
 }
 unsigned int tamStrI(const char * arr)
 {
@@ -17,7 +17,7 @@ unsigned int tamStrI(const char * arr)
 
 int main()
 {
-    const char * arr="aoeui";
+    const char arr[]="aoeui";
     cout<<tamStrR(arr)<<endl;
     cout<<tamStrI(arr)<<endl;
 }

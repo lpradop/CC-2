@@ -1,19 +1,20 @@
 #include <iostream>
 using namespace std;
-void printStr(const char * arr,unsigned int n)
+void printStr(const char *arr, unsigned int n)
 {
-    for (unsigned int i = 0; i < n; ++i) 
-    { 
-        cout<<*(arr+i)<<" ";
+    for (unsigned int i = 0; i < n; ++i)
+    {
+        cout << *(arr + i) << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
 
-void printArr(int * arr,unsigned int n)
+void printArr(int *arr, unsigned int n)
 {
-    for (unsigned int i = 0; i < n; ++i) 
-    { 
-        cout<<*(arr+i)<<" ";
+    for (unsigned int i = 0; i < n; ++i)
+    {
+        cout << *(arr + i) << " ";
     }
-    cout<<endl;
+    cout << endl;
 }
+printArr()
