@@ -22,7 +22,7 @@ ArregloDePersonas::ArregloDePersonas(const Persona kPersonas[], const size_t kTa
     tam_ = kTam;
     tam_mem_ = 2 * kTam;
     persona_ = new Persona[tam_mem_];
-    CopyArr(kPersonas, persona_, kTam);
+    CopyArr(kPersonas, persona_, kTam); 
 }
 ArregloDePersonas::~ArregloDePersonas()
 {

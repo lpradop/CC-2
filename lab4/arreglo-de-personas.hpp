@@ -6,7 +6,7 @@ private:
     Persona *persona_;
     size_t tam_;
     size_t tam_mem_;
-    void CopyArr(const Persona * from, Persona * to,const size_t size);
+    void CopyArr(const Persona *from, Persona *to, const size_t size);
 
 public:
     ArregloDePersonas(const Persona kPersonas[], const size_t kTam);
@@ -21,4 +21,4 @@ public:
     const size_t GetSize();
     ~ArregloDePersonas();
 };
-//tes
+
