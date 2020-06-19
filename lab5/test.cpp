@@ -5,15 +5,14 @@ int main()
     LinkedList test_null = LinkedList();
     test.Print();
     test_null.Print();
+    
+    test.Insert(2);
+    test.Insert(-1);
+    test.Insert(-1);
+    test.Insert(0);
+    test.Insert(3);
 
-    test_null.Insert(-2, 0);
-    test.Insert(-5, 2);
-    test.Insert(-3, 0);
-    test_null.Print();
+    test_null.Insert(6);
     test.Print();
-
-    test.Remove(3);
-    test_null.Remove(0);
     test_null.Print();
-    test.Print();
 }

@@ -10,7 +10,7 @@ private:
 public:
     LinkedList(unsigned int size = 0);
     ~LinkedList();
-    void Insert(int elem,unsigned int node_pos);
+    void Insert(int elem);
     void Remove(unsigned int node_pos);
     void Print();
 };

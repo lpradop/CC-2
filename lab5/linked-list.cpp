@@ -32,25 +32,37 @@ LinkedList::~LinkedList()
         head_ = temp;
     }
 }
-void LinkedList::Insert(int elem, unsigned int node_pos)
+void LinkedList::Insert(int elem)
 {
-    if (node_pos <= size_)
+    if (head_ == nullptr)
     {
-        if (node_pos == 0)
+        head_ = new Node(elem);
+    }
+    else
+    {
+        if (elem <= head_->elem_)
         {
             head_ = new Node(elem, head_);
         }
         else
         {
             Node *previous_node = head_;
-            for (unsigned int i = 1; i < node_pos; ++i)
+            while (previous_node->next_ != nullptr)
             {
-                previous_node = previous_node->next_;
+                if ((previous_node->next_)->elem_ < elem)
+                {
+                    previous_node = previous_node->next_;
+                }
+                else
+                {
+                    break;
+                }
+                
             }
-            previous_node->next_ = new Node(elem, previous_node->next_);
+            previous_node->next_=new Node(elem,previous_node->next_);
         }
-        ++size_;
     }
+    ++size_;
 }
 void LinkedList::Remove(unsigned int node_pos)
 {
